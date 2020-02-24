@@ -4,7 +4,7 @@ package com.hangman;
 import java.io.*;
 
 public class Hangman {
-    private static File file = new File("C:\\Users\\Almaz\\Desktop\\Java\\test3.txt");
+    private static File file = new File("C:\\Users\\Almaz\\Desktop\\Java\\test.txt");
     private static BufferedReader reader;
 
     static {
@@ -24,6 +24,7 @@ public class Hangman {
             e.printStackTrace();
         }
     }
+
 
     private static String asterisk = new String(new char[word.length()]).replace("\0", "*");
     private static int count = 0;
